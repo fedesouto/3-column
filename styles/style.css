@@ -1,0 +1,74 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 50px 0;
+}
+
+.card {
+    width: 225px;
+    padding: 50px;
+    margin: auto;
+}
+.card__sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+.card__suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.card__luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+.titles {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+}
+.learnMore {
+    padding: 12px 24px;
+    border-radius: 24px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: hsla(0, 0%, 100%, 0.75) solid 2px;
+    margin-top: 50px;
+}
+.learnMore__sedan {
+    color: hsl(31, 77%, 52%);
+}
+.learnMore__suv {
+    color: hsl(184, 100%, 22%);
+}
+.learnMore__luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.learnMore:hover {
+    background-color: inherit;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (min-width: 1024px)  {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 0;
+    }
+    .card__sedan {
+        border-radius: 10px 0 0 10px;
+    }
+    .card__luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}
